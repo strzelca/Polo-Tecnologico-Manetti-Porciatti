@@ -4,6 +4,24 @@ body {
     color: white;
   }
 
+a:visited {
+  text-decoration: none;
+  color: #8888AD
+}
+
+a:link {
+  text-decoration: none;
+  color: hsl(199, 100%, 34%)
+}
+
+  img {
+    border-radius: 8px;
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 .button {
     background-color: #5d5d5c;
