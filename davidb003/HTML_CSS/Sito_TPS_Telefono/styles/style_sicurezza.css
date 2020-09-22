@@ -4,7 +4,17 @@ body {
     color: white;
   }
 
+  a:visited {
+    text-decoration: none;
+    color: #8888AD
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: hsl(199, 100%, 34%)
+  }
 
+  
 .button {
     background-color: #5d5d5c;
     border: none;
