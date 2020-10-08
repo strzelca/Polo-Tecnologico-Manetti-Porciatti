@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
+
+body {
+    background-color: #2c2c28;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+  }
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28;
+    text-align: center;
+}
+
+.button {
+    background-color: #5d5d5c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-content: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #2c2c28;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: 2c2c28;
+  }

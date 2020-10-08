@@ -1,0 +1,113 @@
+<head>
+    <title>Hardware</title>
+    <link rel="stylesheet" href="styles/style_software.css">
+    <style>
+        .collapsible {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: red;
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color:brown;
+        }
+        </style>
+
+</head>
+<body>
+  <form method="get" action="index.html">
+    <button type="submit">Indietro</button>
+</form>
+    <h1>Software</h1>
+
+    <button type="button" class="collapsible"><h2>> Vari software</h2></button>
+    <div class="content">
+
+        <ol>
+            <a href="#Base"><li>Di Base</li></a>
+            <a href="#Applicativo"><li>Applicativo</li></a>
+        <ol>
+    </div>
+
+   
+    
+    
+
+    <div id="Base"></div>
+    <h2>Base</h2>
+    Il software di base comprende tutti i sistemi operativi ovvero i software
+    necessari all'avvio e al funzionamento di un computer (es. Windows, Mac OS, Linux, ecc.)
+
+    <div id="Applicativo"></div><h2>Applicativo</h2>
+    Riguarda tutti i software installati sul sistema operativo usati per soddisfarre le
+    proprie esigenze
+    <hr />
+    <h1>Linguaggi di programmazione</h1>
+    I linguaggi di programmazione sono particolari linguaggi artificiali usati
+    nella comunicazione uomo-macchina. <br>
+    Hanno un vocabolo ristretto, poche regole sintattiche ma molto rigide, e 
+    una semantica non ambigua. <br>
+
+    <h3>Linguaggio macchina</h3>
+    Ogni elaboratore disponi di un certo numero di funzioni elementari. <br>
+    A ogni funzione corrisponde una istruzione della macchina, l'insieme di queste
+    istruzioni prende il nome di linguaggio macchina.
+
+    <hr />
+    <h2>Esistono 2 tipi di linguaggi di programmazione:</h2>
+    <ol>
+        <li>Di basso livello</li>
+        <li>Alto livello</li>
+    </ol>
+    I linguaggi di basso livello sono i più simili al linguaggio macchina. <br>
+    I linguaggi ad alto livello sono più simili al linguaggio umano, caratterizzati
+    da una sintassi indipendente da qualsiasi linguaggio macchina (Linguaggi imperativi)
+
+    <hr />
+    <h2>La traduzione di un programma</h2>
+    Per poter essere eseguiti dall’elaboratore, i programmi devono essere 
+    tradotti in linguaggio macchina. <br>
+    Per questo motivo sono nati i compilatori, cioè programmi che, partendo
+    da un programma scritto in un linguaggio ad alto livello (programma
+    sorgente), lo traducono in un programma comprensibile dall’elaboratore
+    (programma oggetto). <br>
+    esistono ioltre gli interpreti, ovvero programmi che traducono ed eseguono
+    un istruzione per volta
+
+    <hr />
+    <h2>Altri tipi di linguaggi</h2>
+    <ol>
+        <li>Linguaggi di markup: Per creare facilmente le pagine internet</li>
+        <li>Linguaggi Object-Oriented: Permettono di definire le strutture dati</li>
+    </ol>
+ 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+</body>
