@@ -14,6 +14,15 @@ body {
     font-family: 'Roboto Slab', sans-serif;
   }
 
+  img {
+    border-radius: 8px;
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 .button {
     background-color: #5d5d5c;
     border: none;
