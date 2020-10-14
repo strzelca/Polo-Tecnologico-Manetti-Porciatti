@@ -22,6 +22,10 @@ a:link {
     margin-right: auto;
   }
 
+h1 {
+  text-align: center;
+}
+
 .button {
     background-color: #5d5d5c;
     border: none;

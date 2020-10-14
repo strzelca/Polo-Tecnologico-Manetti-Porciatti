@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300&display=swap');
+
 body {
     background-color: #353530;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,6 +16,14 @@ body {
     color: hsl(199, 100%, 34%)
   }
 
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Noto Sans HK', sans-serif;  
+    font-size: 18;
+  }
   
 .button {
     background-color: #5d5d5c;
