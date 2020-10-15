@@ -8,6 +8,8 @@ public class Telefono {
     private float credito;
     private int internetConsumato;
 
+    /* Costruttore */
+
     Telefono(String nomeTelefono) {
         setNomeTelefono(nomeTelefono);
         setStato(false);
@@ -15,6 +17,8 @@ public class Telefono {
         setMinutiConsumati(0);
         setCredito(0);
     }
+
+    /* GETTER SETTER */
 
     public String getNomeTelefono() { return nomeTelefono; }
     public void setNomeTelefono(String nomeTelefono) { this.nomeTelefono = nomeTelefono; }
@@ -30,6 +34,8 @@ public class Telefono {
 
     public int getInternetConsumato() { return internetConsumato; }
     public void setInternetConsumato(int internetConsumato) { this.internetConsumato = internetConsumato; }
+
+    /* Funzioni */
 
     public void ricarica() { setCredito(getCredito()+20); }
 
@@ -66,7 +72,5 @@ public class Telefono {
                             "\nMinuti Consumati: " + getMinutiConsumati() +
                             "\nInternet Consumato: " + getInternetConsumato());
     }
-
-
 
 }

@@ -13,13 +13,23 @@ public class Main {
         Telefono telefono = new Telefono(scan.nextLine());
 
         telefono.ricarica();
+
         telefono.telefonata(); // Spento
+
         telefono.cambiaStato();
+
         telefono.telefonata(); // chiama
+
         telefono.connessione(); // consuma
+
         telefono.setCredito(0);
+
         telefono.connessione();
+
         telefono.ricarica();
+
+        telefono.connessione();
+
         telefono.stampa();
 
     }
