@@ -25,12 +25,10 @@ h1 {
     align-content: center;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #2c2c28;
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: 2c2c28;
-  }
+.button:hover {
+  background-color: red;
+}
+
+#edicola :link {
+  color:rgba(0, 0, 0, 0);
+}
