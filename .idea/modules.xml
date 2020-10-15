@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/davidb003/Java/ContoCorrente/ContoCorrente.iml" filepath="$PROJECT_DIR$/davidb003/Java/ContoCorrente/ContoCorrente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/davidb003/Java/ContoCorrente_Input/ContoCorrente_Input.iml" filepath="$PROJECT_DIR$/davidb003/Java/ContoCorrente_Input/ContoCorrente_Input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/davidb003/Java/PhoneDataPlan/PhoneDataPlan.iml" filepath="$PROJECT_DIR$/davidb003/Java/PhoneDataPlan/PhoneDataPlan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Polo-Tecnologico-Manetti-Porciatti.iml" filepath="$PROJECT_DIR$/.idea/Polo-Tecnologico-Manetti-Porciatti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/davidb003/Java/Studente_array/Studente_array.iml" filepath="$PROJECT_DIR$/davidb003/Java/Studente_array/Studente_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/davidb003/Java/input/input.iml" filepath="$PROJECT_DIR$/davidb003/Java/input/input.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,25 +1,26 @@
 package com.school_phonedataplan;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        DataPlan DataPlan = new DataPlan();
 
-        DataPlan.setPower(false);
-        DataPlan.setMinutesLeft(0);
-        DataPlan.setCredit(0);
-        DataPlan.setInternetLeft(0);
+        Scanner scan = new Scanner(System.in);
 
-        public float TopUp() {
-            Scanner sc= new Scanner(System.in);
-            System.out.print("How much do you wanna TopUp? --> ");
-            float amount = sc.nextInt();
-            DataPlan.setCredit(amount);
+        System.out.println("Inserisci il nome del telefono: ");
 
-            return amount;
-        }
-        }
+        Telefono telefono = new Telefono(scan.nextLine());
+
+        telefono.ricarica();
+        telefono.telefonata(); // Spento
+        telefono.cambiaStato();
+        telefono.telefonata(); // chiama
+        telefono.connessione(); // consuma
+        telefono.setCredito(0);
+        telefono.connessione();
+        telefono.ricarica();
+        telefono.stampa();
+
     }
 }
