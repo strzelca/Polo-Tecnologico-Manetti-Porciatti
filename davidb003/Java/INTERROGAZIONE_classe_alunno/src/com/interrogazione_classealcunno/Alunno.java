@@ -6,7 +6,7 @@ public class Alunno {
     String Materia;
     int Voto;
 
-    Alunno(String Nome, String  Cognome, String Materia, int Voto) {
+    Alunno(String Nome, String Cognome, String Materia, int Voto) {
         setNome(Nome);
         setCognome(Cognome);
         setMateria(Materia);
@@ -26,7 +26,7 @@ public class Alunno {
         return Cognome;
     }
 
-    public void setCognome(String Nome) {
+    public void setCognome(String Cognome) {
         this.Cognome = Cognome;
     }
 
@@ -34,21 +34,19 @@ public class Alunno {
         return Materia;
     }
 
-    public void setMateria(String Nome) {
+    public void setMateria(String Materia) {
         this.Materia = Materia;
-    }
-
-    public int setVoto(int Voto) {
-        return Voto;
-    }
-
-    public void getVoto(int Voto) {
-        this.Voto = Voto;
     }
 
     public int getVoto() {
         return Voto;
     }
+
+    public void setVoto(int Voto) { this.Voto = Voto; }
+
+
+
+
 
 }
 
