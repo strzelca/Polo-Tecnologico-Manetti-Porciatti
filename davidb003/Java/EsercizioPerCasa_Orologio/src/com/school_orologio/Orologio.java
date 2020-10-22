@@ -49,7 +49,7 @@ public class Orologio {
     }
 
     public void stampa() {
-        System.out.println("\nOre: " + getOre() +
-                            "\nMinuti: " + getMinuti());
+        System.out.println("\nOre: " + getOre() + "\nMinuti: " + getMinuti());
     }
+
 }
