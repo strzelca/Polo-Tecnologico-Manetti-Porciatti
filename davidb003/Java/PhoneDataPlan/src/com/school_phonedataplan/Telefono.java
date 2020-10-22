@@ -10,6 +10,14 @@ public class Telefono {
 
     /* Costruttore */
 
+   // Telefono(String nomeTelefono) {
+   //     this.nomeTelefono = nomeTelefono;
+   //     this.stato = false;
+   //     this.minutiConsumati = 0;
+   //     this.credito = 0;
+   //     this.internetConsumato = 0;
+   // }
+
     Telefono(String nomeTelefono) {
         setNomeTelefono(nomeTelefono);
         setStato(false);
@@ -21,7 +29,11 @@ public class Telefono {
     /* GETTER SETTER */
 
     public String getNomeTelefono() { return nomeTelefono; }
-    public void setNomeTelefono(String nomeTelefono) { this.nomeTelefono = nomeTelefono; }
+
+
+    public void setNomeTelefono(String nomeTelefono) {
+        this.nomeTelefono = nomeTelefono;
+    }
 
     public boolean isStato() { return stato; }
     public void setStato(boolean stato) { this.stato = stato; }
@@ -37,9 +49,43 @@ public class Telefono {
 
     /* Funzioni */
 
-    public void ricarica() { setCredito(getCredito()+20); }
+    public void ricarica() {
+        setCredito(getCredito()+20);
+    }
+
+    /* public void ricarica() {
+        credito = credito + 20;
+    }
+
+    public void ricarica(float importo) {
+        credito = credito + importo;
+    } */
 
     public void cambiaStato () { setStato(!isStato()); }
+
+    /* public void accendi () {
+        if stato = false
+        stato = true;
+    }
+
+    public void spegni () {
+        if stato = true
+        stato = false;
+    }
+
+    public void cambiaStato1 () {
+        if
+        (stato = true)
+        {
+            stato = false;
+        }
+        else
+        {
+            stato = true;
+        }
+    }
+   */
+
 
     public void telefonata() {
         if (isStato() && getCredito()>=1) {
