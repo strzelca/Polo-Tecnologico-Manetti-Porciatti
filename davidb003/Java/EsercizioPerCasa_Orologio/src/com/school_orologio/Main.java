@@ -16,14 +16,12 @@ package com.school_orologio;
     4. Fine
 */
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String os = System.getProperty("os.name");
         Orologio orologio = null;
 
         boolean execute = true;

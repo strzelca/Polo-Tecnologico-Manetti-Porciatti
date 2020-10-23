@@ -3,12 +3,7 @@ package com.school_orologio;
 public class Orologio {
     private byte ore;
     private byte minuti;
-
-    Orologio() {}
-
-    Orologio(int ore) {
-        setOre(ore);
-    }
+    
 
     Orologio(int ore, int minuti) {
         setOre(ore);
