@@ -28,7 +28,7 @@ public class Main {
 
         boolean execute = true;
         byte select;
-        int y;
+        byte inputIncremento;
 
         while(execute) {
             System.out.println("Scegli una opzione");
@@ -62,12 +62,14 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("\nInserisci incremento ore: ");
-                    y = scan.nextByte();
-                    orologio.incrementoOre((byte) y);
+                    inputIncremento = scan.nextByte();
+                    orologio.incrementoOre(inputIncremento);
                     break;
                 case 6:
                     execute=!execute;
                     break;
+                default:
+                    throw new IllegalStateException("Il tasto selezionato non è valido: " + select);
             }
 
         }

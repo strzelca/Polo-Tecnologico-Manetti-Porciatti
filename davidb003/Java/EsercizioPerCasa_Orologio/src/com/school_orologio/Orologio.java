@@ -3,13 +3,7 @@ package com.school_orologio;
 public class Orologio {
     private byte ore;
     private byte minuti;
-    public void incrementoOre(byte x) {
-        ore = (byte) (ore + x);
-        if (ore > 24) {
-            ore = (byte) (ore - x);
-            System.out.println("Orario maggiore di 24");
-        }
-    }
+    private byte inputIncremento;
     
 
     Orologio(int ore, int minuti) {
@@ -32,6 +26,14 @@ public class Orologio {
     public void stampa() {
         System.out.println("Orario:");
         System.out.format("%02d:%02d\n\n", getOre(), getMinuti());
+    }
+
+    public void incrementoOre(byte inputIncremento) {
+        ore = (byte) (ore + inputIncremento);
+        if (ore > 24) {
+            ore = (byte) (ore - inputIncremento);
+            System.out.println("Orario maggiore di 24");
+        }
     }
 
 }
