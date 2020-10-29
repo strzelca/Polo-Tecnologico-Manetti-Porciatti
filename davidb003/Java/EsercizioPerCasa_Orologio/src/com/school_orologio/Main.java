@@ -6,6 +6,8 @@ package com.school_orologio;
     1. Inizializzare l'orologio ad un ora di default (es. 00:00)
     2. Inizializzare solo le ore
     3. Inizializzare sia le ore sia i minuti
+    4. Inserire da tastiera un incremento ore, aggiornare le ore, controllando però,
+       che la somma delle ore precedenti più le nuove ore non superi le ore 24
 
     Inizializzare i metodi get e set, il metodo stampa
 
@@ -16,16 +18,17 @@ package com.school_orologio;
     4. Fine
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 1. Importare lo scanner
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // 2. Dichiarare lo scanner
         Orologio orologio = null;
 
         boolean execute = true;
         byte select;
+        int y;
 
         while(execute) {
             System.out.println("Scegli una opzione");
@@ -33,10 +36,10 @@ public class Main {
                     "\t1. Inizializza le ore al default\n" +
                     "\t2. Inizializza solo le ore\n" +
                     "\t3. Inizializza sia le ore che i minuti\n" +
-                    "\t4. Stampa\n" +
-                    "\t5. Fine\n");
+                    "\t4. Stampa\n" + "\t5. Incremento Orario\n" +
+                    "\t6. Fine\n");
             System.out.print("> ");
-            select = scan.nextByte();
+            select = scan.nextByte(); // 3. Utilizzare lo scanner
 
             switch (select) {
                 case 1:
@@ -58,6 +61,11 @@ public class Main {
                     }
                     break;
                 case 5:
+                    System.out.println("\nInserisci incremento ore: ");
+                    y = scan.nextByte();
+                    orologio.incrementoOre((byte) y);
+                    break;
+                case 6:
                     execute=!execute;
                     break;
             }
