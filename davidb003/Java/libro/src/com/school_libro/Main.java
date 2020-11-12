@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        /* TODO 5. Gestire con menu le seguenti opzioni
+        /* DONE 5. Gestire con menu le seguenti opzioni
         - Inserimento dati del libri
                 - Modifica del titolo del libro (input da tastiera)
         - Visualizzazione dell'autore del libro
@@ -13,6 +13,7 @@ public class Main {
         - Modifica del prezzo del libro
         - Fine
          */
+
 
         Scanner scan = new Scanner(System.in);
         Libro libro = new Libro();
