@@ -18,12 +18,7 @@ TODO 4. aggiorna prezzo inserendo in input il nuovo importo
     private float prezzo;
     private String casaEditrice;
 
-    Libro() {
-        setTitolo(titolo);
-        setAutore(autore);
-        setPrezzo(prezzo);
-        setCasaEditrice(casaEditrice);
-    }
+    Libro() {}
 
 
     public String getTitolo() {

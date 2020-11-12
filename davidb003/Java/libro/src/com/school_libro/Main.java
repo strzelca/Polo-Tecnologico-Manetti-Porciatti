@@ -20,10 +20,6 @@ public class Main {
         boolean execute = true;
         byte select;
 
-        String inputTitolo;
-        String inputAutore;
-        float inputPrezzo;
-        String inputCasaEditrice;
 
         String inputNuovoNome;
 
@@ -42,32 +38,26 @@ public class Main {
 
             switch (select) {
                 case 1:
-                    System.out.println("\n\n===== INSERIMENTO DATI LIBRO ======\n" +
-                            "Titolo: ");
-                    inputTitolo = scan.nextLine();
+                    System.out.println("\n\n===== INSERIMENTO DATI LIBRO ======\n");
+                    System.out.println("\nTitolo:");
+                    scan.nextLine();
+                    libro.setTitolo(scan.nextLine());
                     System.out.println("\nAutore: ");
-                    inputAutore = scan.nextLine();
+                    libro.setAutore(scan.nextLine());
                     System.out.println("\nPrezzo: €");
-                    inputPrezzo = scan.nextFloat();
+                    libro.setPrezzo(scan.nextFloat());
                     System.out.println("\nCasa Editrice: ");
-                    inputCasaEditrice = scan.nextLine();
-
-                    libro.setTitolo(inputTitolo);
-                    libro.setAutore(inputAutore);
-                    libro.setPrezzo(inputPrezzo);
-                    libro.setCasaEditrice(inputCasaEditrice);
+                    scan.nextLine();
+                    libro.setCasaEditrice(scan.nextLine());
 
                     System.out.println("\n==================================\n\n");
                     break;
                 case 2:
                     System.out.println("\n\n===== MODIFICA NOME LIBRO =====\n" +
                             "Il nome corrente è: " + libro.getTitolo() + "\nInserisci il nuovo nome: ");
-                    inputNuovoNome = scan.nextLine();
-
-                    libro.setTitolo(inputNuovoNome);
-
+                    scan.nextLine();
+                    libro.setTitolo(scan.nextLine());
                     System.out.println("\n\nIl nuovo nome è: " + libro.getTitolo());
-
                     System.out.println("\n==================================\n\n");
                     break;
                 case 3:
