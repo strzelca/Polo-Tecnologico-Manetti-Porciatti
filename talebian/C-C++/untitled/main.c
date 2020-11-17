@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]){int n,c,t=0,i;printf("\n+----------------------+\n| Test sulle Tabelline |\n+----------------------+\n");printf("\nRipassa la tabellina del (numero da 1 a 9): ");scanf("%d",&n);for(i=1;i<=10;i++){printf("\nQuanto fa %dx%d? ",n,i);scanf("%d",&c);if(n*i==c)t++;}switch(t){case 0:printf("\nPenso che tu debba studiare di piu\'\n");break;case 10:printf("\nPerfetto\n");break;default:if(t>0&&t<=5)printf("\nInsufficente %d\n",t);else if(t>5&&t<10)printf("\nSufficiente %d",t);break;}system("PAUSE");return 0;}

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/eslab1c__.dir/main.cpp.o  -o eslab1c__ 

@@ -30,16 +30,14 @@ public class Main {
             switch (select) {
                 case 1:
                     System.out.println("\n\n===== INSERIMENTO DATI ======\n");
-                    System.out.println("\nNome Gara; ");
+                    System.out.println("\nNome Gara: ");
                     scan.nextLine();
                     gare.setNomeGara(scan.nextLine());
 
                     System.out.println("\nTipo Sport: ");
-                    scan.nextLine();
                     gare.setTipoSport(scan.nextLine());
 
                     System.out.println("\nPremio In Denaro: ");
-                    scan.nextDouble(); // TODO Fix need input = false
                     gare.setPremioInDenaro(scan.nextDouble());
 
                     System.out.println("\n==================================\n\n");
@@ -54,12 +52,10 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("\n\n===== OUTPUT ======\n");
-                    System.out.println("\nNome Gara; " + gare.getNomeGara());
 
+                    System.out.println("\nNome Gara: " + gare.getNomeGara());
                     System.out.println("\nTipo Sport: " + gare.getTipoSport());
-
-                    System.out.println("\nPremio In Denaro: " + gare.getTipoSport());
-
+                    System.out.println("\nPremio In Denaro: " + gare.getPremioInDenaro() + "€");
                     System.out.println("\nNome Vincitore: " + gare.getNomeVincitore());
 
                     System.out.println("\n==================================\n\n");

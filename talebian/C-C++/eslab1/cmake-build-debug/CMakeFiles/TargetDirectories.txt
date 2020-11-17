@@ -1,0 +1,3 @@
+D:/Projects/Polo-Tecnologico-Manetti-Porciatti/talebian/C-C++/eslab1/cmake-build-debug/CMakeFiles/eslab1.dir
+D:/Projects/Polo-Tecnologico-Manetti-Porciatti/talebian/C-C++/eslab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/Polo-Tecnologico-Manetti-Porciatti/talebian/C-C++/eslab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

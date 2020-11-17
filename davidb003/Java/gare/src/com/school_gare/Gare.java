@@ -16,7 +16,10 @@ public class Gare {
     private double premioInDenaro;
     private String nomeVincitore;
 
-    public Gare() {}
+    public Gare() {
+        setPremioInDenaro(0);
+        setNomeVincitore("");
+    }
 
     public String getNomeGara() {
         return nomeGara;

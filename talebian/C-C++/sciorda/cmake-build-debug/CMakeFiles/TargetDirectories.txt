@@ -1,0 +1,3 @@
+/tmp/tmp.Xc27yYamoH/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/tmp.Xc27yYamoH/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.Xc27yYamoH/cmake-build-debug/CMakeFiles/sciorda.dir

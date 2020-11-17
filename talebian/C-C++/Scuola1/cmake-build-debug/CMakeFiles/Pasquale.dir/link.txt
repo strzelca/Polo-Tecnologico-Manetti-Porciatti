@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Pasquale.dir/main.c.o  -o Pasquale 
