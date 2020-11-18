@@ -1,8 +1,8 @@
 package com.school_dipendente;
 
-// TODO Creare la Classe Dipendente con: attributi Nome,
-// TODO Cognome, Mansione, Stipendio, il metodo Costruttore e
-// TODO metodi necessari per gestire il programma.
+// DONE Creare la Classe Dipendente con: attributi Nome,
+// DONE Cognome, Mansione, Stipendio, il metodo Costruttore e
+// DONE metodi necessari per gestire il programma.
 
 public class Dipendente {
     public static String nome;
