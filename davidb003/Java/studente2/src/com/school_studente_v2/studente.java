@@ -3,8 +3,8 @@ package com.school_studente_v2;
 //DONE creare il metodo costruttore per inserire il  codicealunno, cognome, nome e classe,
 // mentre il voto deve essere posto a zero;
 //DONE creare metodi get, set e stampa;
-//TODO creare il metodo aggiungivoto, per inserire il voto all'alunno;
-//TODO creare il metodo modificaclasse, per modificare la classe dell'alunno con la classe nuova inserita da tastiera;
+//DONE creare il metodo aggiungivoto, per inserire il voto all'alunno;
+//DONE creare il metodo modificaclasse, per modificare la classe dell'alunno con la classe nuova inserita da tastiera;
 //TODO creare il metodo esito, per visualizzare se alunno è promosso(se voto >= a 6), respinto( se voto<di 6);
 public class studente {
     private String codiceAlunno;
@@ -24,39 +24,43 @@ public class studente {
         return codiceAlunno;
     }
 
-    public void setCodiceAlunno(String codiceAlunno) {
+    public String setCodiceAlunno() {
         this.codiceAlunno = codiceAlunno;
+        return codiceAlunno;
     }
 
     public String getCognome() {
         return cognome;
     }
 
-    public void setCognome(String cognome) {
+    public String setCognome() {
         this.cognome = cognome;
+        return cognome;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public String setNome() {
         this.nome = nome;
+        return null;
     }
 
     public String getClasse() {
         return classe;
     }
 
-    public void setClasse(String classe) {
+    public String setClasse() {
         this.classe = classe;
+        return null;
     }
 
     public byte getVoto() {
         return voto;
     }
 
-    public byte setVoto() {
+    public byte setVoto(byte nuovoVoto) {
         this.voto = voto;
         return 0;
     }
@@ -67,9 +71,17 @@ public class studente {
                 + "\nClasse: " + getClasse() + "\nVoto: " + getVoto());
     }
 
-    public void aggiungiVoto() {
-        voto = setVoto();
+    public void aggiungiVoto(byte nuovoVoto) {
+        setVoto(nuovoVoto);
     }
+
+    public void modificaClasse() {
+        String codiceAlunno = setCodiceAlunno();
+        String cognome = setCognome();
+        String nome = setNome();
+        String classe = setClasse();
+    }
+
 
 
 }
