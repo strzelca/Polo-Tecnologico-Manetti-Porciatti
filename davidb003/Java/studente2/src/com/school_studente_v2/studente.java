@@ -4,66 +4,72 @@ package com.school_studente_v2;
 // mentre il voto deve essere posto a zero;
 //DONE creare metodi get, set e stampa;
 //DONE creare il metodo aggiungivoto, per inserire il voto all'alunno;
-//DONE creare il metodo modificaclasse, per modificare la classe dell'alunno con la classe nuova inserita da tastiera;
-//TODO creare il metodo esito, per visualizzare se alunno è promosso(se voto >= a 6), respinto( se voto<di 6);
+//TODO creare il metodo modificaclasse, per modificare la classe dell'alunno con la classe nuova inserita da tastiera;
+//DONE creare il metodo esito, per visualizzare se alunno è promosso(se voto >= a 6), respinto( se voto<di 6);
 public class studente {
     private String codiceAlunno;
     private String cognome;
     private String nome;
     private String classe;
-    private byte voto = 0;
+    private float voto = 0;
+    private float inputVoto;
 
+    // Constructor
     public studente() {
-        this.codiceAlunno = codiceAlunno;
-        this.cognome = cognome;
-        this.nome = nome;
-        this.classe = classe;
     }
+
+    // Getter and Setter
 
     public String getCodiceAlunno() {
         return codiceAlunno;
     }
 
-    public String setCodiceAlunno() {
+    public void setCodiceAlunno(String codiceAlunno) {
         this.codiceAlunno = codiceAlunno;
-        return codiceAlunno;
     }
 
     public String getCognome() {
         return cognome;
     }
 
-    public String setCognome() {
+    public void setCognome(String cognome) {
         this.cognome = cognome;
-        return cognome;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String setNome() {
+    public void setNome(String nome) {
         this.nome = nome;
-        return null;
     }
 
     public String getClasse() {
         return classe;
     }
 
-    public String setClasse() {
+    public void setClasse(String classe) {
         this.classe = classe;
-        return null;
     }
 
-    public byte getVoto() {
+    public float getVoto() {
         return voto;
     }
 
-    public byte setVoto(byte nuovoVoto) {
+    public void setVoto(float voto) {
         this.voto = voto;
-        return 0;
     }
+
+    // Input()
+
+    studente(String codiceAlunno, String cognome, String nome, String classe) {
+        this.codiceAlunno = codiceAlunno;
+        this.cognome = cognome;
+        this.nome = nome;
+        this.classe = classe;
+    }
+
+    // Metodi
 
     public void stampa() {
         System.out.println("\nCodice Alunno: " + getCodiceAlunno() +
@@ -71,17 +77,21 @@ public class studente {
                 + "\nClasse: " + getClasse() + "\nVoto: " + getVoto());
     }
 
-    public void aggiungiVoto(byte nuovoVoto) {
-        setVoto(nuovoVoto);
+    public void aggiungiVoto(float inputVoto) {
+        voto = inputVoto;
+        if (inputVoto > 10 || inputVoto < 0) {
+                throw new IllegalStateException("[X] INPUT ERROR: Il voto deve essere compreso tra 0 e 10");
+            }
+        }
+    public void esito() {
+        if (voto >= 5.6) {
+            System.out.println("\n " + getNome() + " e' promosso");
+        }
+        else {
+            System.out.println("\n" + getNome() + " e' bocciato");
+        }
     }
-
-    public void modificaClasse() {
-        String codiceAlunno = setCodiceAlunno();
-        String cognome = setCognome();
-        String nome = setNome();
-        String classe = setClasse();
-    }
-
-
-
 }
+
+
+
