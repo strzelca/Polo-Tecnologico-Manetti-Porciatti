@@ -1,39 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
-
-body {
-    background-color: #353530;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-  }
-
-
-  header {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Roboto Slab', sans-serif;
-  }
-
-  img {
-    border-radius: 8px;
-    margin-top: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-.button {
-    background-color: #5d5d5c;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    }
-
 table.blueTable {
         border: 1px solid #1C6EA4;
         background-color: #6e6e6e;

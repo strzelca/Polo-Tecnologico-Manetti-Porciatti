@@ -1,39 +1,41 @@
 <head>
-    <link rel="stylesheet" href="styles/style_scelta.css">
     <title>Scelta di un cellulare</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style_menu.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="homepage.html">Home</a>
-        <div class="subnav">
-          <button class="subnavbtn">Informazioni Hardware <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="specifiche.html#CPU">CPU</a>
-            <a href="specifiche.html#RAM">RAM</a>
-            <a href="specifiche.html#RefreshRate">Refresh Rate</a>
-            <a href="specifiche.html#RefreshRate">Informazioni Hardware del OnePlus 7T Pro</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Funzionalità di Android <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="funzioni.html#GooglePay">Google Pay</a>
-            <a href="funzioni.html#RCS">RCS</a>
-            <a href="funzioni.html#GoogleMaps">Google Maps per i trasporti pubblici</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Come scegliere un nuovo telefono <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="scelta.html#software">Il Sistema Operativo</a>
-            <a href="scelta.html#hardware">L'hardware</a>
-          </div>
-        </div>
-        <a href="sicurezza.html">Raccomandazioni di sicurezza</a>
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Come scegliere un nuovo telefono <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="scelta.html#software">Il Sistema Operativo</a>
+        <a href="scelta.html#hardware">L'hardware</a>
       </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Informazioni Hardware <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="specifiche.html#CPU">CPU</a>
+        <a href="specifiche.html#RAM">RAM</a>
+        <a href="specifiche.html#RefreshRate">Refresh Rate</a>
+        <a href="specifiche.html#RefreshRate">Informazioni Hardware del OnePlus 7T Pro</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Funzionalità di Android <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="funzioni.html#GooglePay">Google Pay</a>
+        <a href="funzioni.html#RCS">RCS</a>
+        <a href="funzioni.html#GoogleMaps">Google Maps per i trasporti pubblici</a>
+      </div>
+    </div>
+    <a href="sicurezza.html">Raccomandazioni di sicurezza</a>
+  </div>
+  
 
 
     <h1>Guida alla scelta di un telefono</h1>
@@ -41,6 +43,15 @@
 
     <div id="software">
     <h2>1. Il sistema operativo</h2>
+
+    <button type="button" class="collapsible"><h2>> Cos'e' un Sistema Operativo?</h2></button>
+    <div class="content">
+      <h3>Un sistema operativo, in informatica, è un software di base che gestisce le risorse hardware fornendo di conseguenza l'accesso agli applicativi supportati. <br>
+      Con esso possiamo utilizzare gli applicativi installati e installarne di nuovi. <br> <br>
+      <img src="images/so.png" alt="Schema di Sistema operativo"> <br> <br> </h3>
+      <h2><a href="https://en.wikipedia.org/wiki/Operating_system">> Scopri di piu'</a></h2>
+    </div>
+
     <h3>Android</h3>
     Il sistema Android ha la caratteristica di poter essere modificato a proprio piacimento. <br>
     Ad esempio, è possibile installare applicazioni di terze parti (APK), Schermate Home personalizzate,
@@ -61,6 +72,21 @@
     Se si desidera avere <b>prestazioni più basse, ma un sistema operativo più stabile e semplice</b>,
     consiglio uno smartphone <b>Apple</b>
     </div>
-
-
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>

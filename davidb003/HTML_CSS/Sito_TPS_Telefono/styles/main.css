@@ -6,15 +6,10 @@ body {
     color: white;
   }
 
-  a:visited {
-    text-decoration: none;
-    color: #8888AD
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: hsl(199, 100%, 34%)
-  }
+a:link {
+  text-decoration: none;
+  color: hsl(199, 100%, 34%)
+}
 
   img {
     border-radius: 8px;

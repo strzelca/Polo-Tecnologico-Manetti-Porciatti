@@ -1,39 +1,41 @@
 <head>
-    <link rel="stylesheet" href="styles/style_funzioni.css">
     <title>Funzioni | OnePlus 7T Pro</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style_menu.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="homepage.html">Home</a>
-        <div class="subnav">
-          <button class="subnavbtn">Informazioni Hardware <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="specifiche.html#CPU">CPU</a>
-            <a href="specifiche.html#RAM">RAM</a>
-            <a href="specifiche.html#RefreshRate">Refresh Rate</a>
-            <a href="specifiche.html#RefreshRate">Informazioni Hardware del OnePlus 7T Pro</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Funzionalità di Android <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="funzioni.html#GooglePay">Google Pay</a>
-            <a href="funzioni.html#RCS">RCS</a>
-            <a href="funzioni.html#GoogleMaps">Google Maps per i trasporti pubblici</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Come scegliere un nuovo telefono <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="scelta.html#software">Il Sistema Operativo</a>
-            <a href="scelta.html#hardware">L'hardware</a>
-          </div>
-        </div>
-        <a href="sicurezza.html">Raccomandazioni di sicurezza</a>
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Come scegliere un nuovo telefono <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="scelta.html#software">Il Sistema Operativo</a>
+        <a href="scelta.html#hardware">L'hardware</a>
       </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Informazioni Hardware <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="specifiche.html#CPU">CPU</a>
+        <a href="specifiche.html#RAM">RAM</a>
+        <a href="specifiche.html#RefreshRate">Refresh Rate</a>
+        <a href="specifiche.html#RefreshRate">Informazioni Hardware del OnePlus 7T Pro</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Funzionalità di Android <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="funzioni.html#GooglePay">Google Pay</a>
+        <a href="funzioni.html#RCS">RCS</a>
+        <a href="funzioni.html#GoogleMaps">Google Maps per i trasporti pubblici</a>
+      </div>
+    </div>
+    <a href="sicurezza.html">Raccomandazioni di sicurezza</a>
+  </div>
+
 
     
 
@@ -43,9 +45,14 @@
     <h2>Google Pay</h2>
     <h3>Google Pay consente di pagare in modalità contactless
         senza avere con se la carta fisica. 
-        <a href="https://pay.google.com/intl/it_it/about/banks/">E' necessario possedere una banca supportata</a><br>
-        <img src="images/googlepay.jpeg" alt="Google Pay">
-    </h3>
+        <a href="https://pay.google.com/intl/it_it/about/banks/">E' necessario possedere una banca supportata</a> e l'NFC sul proprio telefono<br>
+        <img src="images/googlepay.jpeg" alt="Google Pay"> <br> <br>
+        <button type="button" class="collapsible"><h2>> Cos'e' l'NFC?</h2></button>
+    <div class="content">
+      <h3>L'NFC (Near Field Communication) e' un protocollo di comunicazione tra due dispositivi (in questo caso il Terminale POS e il Telefono). <br>
+      Ha un raggio di comunicazione di 4cm per motivi di sicurezza</h3>
+    </div>
+      </h3>
     <br><br>
     </div>
     <div id="RCS">
@@ -66,8 +73,21 @@
     <img src="images/maps.jpg" alt="Google Maps" width="300" height="600"></h3>
     </div>
     <br> <br> <br>
-
-
-
-
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
