@@ -12,7 +12,6 @@ public class studente {
     private String nome;
     private String classe;
     private float voto = 0;
-    private float inputVoto;
 
     // Constructor
     public studente() {
@@ -88,8 +87,36 @@ public class studente {
             System.out.println("\n " + getNome() + " e' promosso");
         }
         else {
-            System.out.println("\n" + getNome() + " e' bocciato");
+            System.out.println("\n" + getNome() + " e' bocciato. Unlucky");
         }
+    }
+
+    // public void modificaClasse(String inputCodiceAlunno, String  inputCognome, String inputNome, String inputClasse) {
+        // setCodiceAlunno(inputCodiceAlunno);
+        // setNome(inputCognome);
+        // setCognome(inputNome);
+        // setClasse(inputClasse);
+    // }
+    // Non funge
+
+    public void modificaClasse_CodiceAlunno (String inputCodiceAlunno) {
+        setCodiceAlunno(inputCodiceAlunno);
+    }
+
+    public void modificaClasse_Cognome(String inputCognome) {
+        setCognome(inputCognome);
+    }
+
+    public void modificaClasse_Nome(String inputNome) {
+        setNome(inputNome);
+    }
+
+    public void modificaClasse_Classe(String inputClasse) {
+        setClasse(inputClasse);
+    }
+
+    public void modificaClasse_Voto(float inputVoto) {
+        setVoto(inputVoto);
     }
 }
 
