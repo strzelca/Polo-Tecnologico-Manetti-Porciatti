@@ -8,7 +8,7 @@ public class Main {
 
         dipendente.aumento(20F);
 
-        dipendente.bonus(300F);
+        dipendente.bonus(5F);
 
         dipendente.print();
 

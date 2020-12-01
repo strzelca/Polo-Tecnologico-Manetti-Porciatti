@@ -71,7 +71,7 @@ public class Dipendente {
         float currentAumento;
         float finalAumento;
         float percentageAumento;
-        percentageAumento = (stipendio / 100) * 20;
+        percentageAumento = (stipendio / 100) * inputAumento;
         currentAumento = getStipendio();
         finalAumento = currentAumento + percentageAumento;
 
