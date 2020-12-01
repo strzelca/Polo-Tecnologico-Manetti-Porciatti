@@ -5,36 +5,39 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	    studente Studente = new studente("KLCFLR01P11Z104G", "Количков",
-                "Флоро", "3Z");
-	    Studente.aggiungiVoto(6F);
-        Studente.stampa();
-        Studente.esito();
+
+        String inputCodiceAlunno,
+               inputCognome,
+               inputNome,
+               inputClasse;
 
         float inputVoto;
 
+	    Studente studente = new Studente("KLCFLR01P11Z104G", "Количков",
+                "Флоро", "3Z");
+	    studente.aggiungiVoto(6F);
+        studente.stampa();
+        studente.esito();
+
         Scanner scan = new Scanner(System.in);
         System.out.println("\nInserisci codice alunno: ");
-        String inputCodiceAlunno = scan.nextLine();
-        Studente.modificaClasse_CodiceAlunno(inputCodiceAlunno);
+        inputCodiceAlunno = scan.nextLine();
 
         System.out.println("\nInserisci Cognome: ");
-        String inputCognome = scan.nextLine();
-        Studente.modificaClasse_Cognome(inputCognome);
+        inputCognome = scan.nextLine();
 
         System.out.println("Inserisci Nome: ");
-        String inputNome = scan.nextLine();
-        Studente.modificaClasse_Nome(inputNome);
+        inputNome = scan.nextLine();
 
         System.out.println("Inserisci Classe: ");
-        String inputClasse = scan.nextLine();
-        Studente.modificaClasse_Classe(inputClasse);
+        inputClasse = scan.nextLine();
 
         System.out.println("Inserisci Voto: ");
         inputVoto = scan.nextFloat();
-        Studente.modificaClasse_Voto(inputVoto);
 
-        Studente.stampa();
-        Studente.esito();
+        studente.modificaClasse(inputCodiceAlunno, inputCognome, inputNome, inputClasse, inputVoto);
+
+        studente.stampa();
+        studente.esito();
     }
 }

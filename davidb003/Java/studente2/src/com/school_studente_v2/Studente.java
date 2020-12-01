@@ -1,12 +1,13 @@
 package com.school_studente_v2;
-//DONE creare la classe studente con i seguenti attributi: codicealunno, cognome, nome, classe, voto.
+//DONE creare la classe Studente con i seguenti attributi: codicealunno, cognome, nome, classe, voto.
 //DONE creare il metodo costruttore per inserire il  codicealunno, cognome, nome e classe,
 // mentre il voto deve essere posto a zero;
 //DONE creare metodi get, set e stampa;
 //DONE creare il metodo aggiungivoto, per inserire il voto all'alunno;
 //TODO creare il metodo modificaclasse, per modificare la classe dell'alunno con la classe nuova inserita da tastiera;
 //DONE creare il metodo esito, per visualizzare se alunno è promosso(se voto >= a 6), respinto( se voto<di 6);
-public class studente {
+
+public class Studente {
     private String codiceAlunno;
     private String cognome;
     private String nome;
@@ -14,7 +15,7 @@ public class studente {
     private float voto = 0;
 
     // Constructor
-    public studente() {
+    public Studente() {
     }
 
     // Getter and Setter
@@ -61,7 +62,7 @@ public class studente {
 
     // Input()
 
-    studente(String codiceAlunno, String cognome, String nome, String classe) {
+    Studente(String codiceAlunno, String cognome, String nome, String classe) {
         this.codiceAlunno = codiceAlunno;
         this.cognome = cognome;
         this.nome = nome;
@@ -91,15 +92,15 @@ public class studente {
         }
     }
 
-    // public void modificaClasse(String inputCodiceAlunno, String  inputCognome, String inputNome, String inputClasse) {
-        // setCodiceAlunno(inputCodiceAlunno);
-        // setNome(inputCognome);
-        // setCognome(inputNome);
-        // setClasse(inputClasse);
-    // }
-    // Non funge
+    public void modificaClasse(String inputCodiceAlunno, String  inputCognome, String inputNome, String inputClasse, float voto) {
+        setCodiceAlunno(inputCodiceAlunno);
+        setNome(inputCognome);
+        setCognome(inputNome);
+        setClasse(inputClasse);
+        setVoto(voto);
+    }
 
-    public void modificaClasse_CodiceAlunno (String inputCodiceAlunno) {
+    /* public void modificaClasse_CodiceAlunno (String inputCodiceAlunno) {
         setCodiceAlunno(inputCodiceAlunno);
     }
 
@@ -117,7 +118,7 @@ public class studente {
 
     public void modificaClasse_Voto(float inputVoto) {
         setVoto(inputVoto);
-    }
+    } */
 }
 
 
