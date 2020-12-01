@@ -6,11 +6,11 @@ public class Main {
         Dipendente dipendente = new Dipendente("Cazimir", "Maftei", "Supporto Clienti",
                 "Orange S.A.", 1000F);
 
-        Dipendente.aumento(20F);
+        dipendente.aumento(20F);
 
-        Dipendente.bonus(300F);
+        dipendente.bonus(300F);
 
-        Dipendente.print();
+        dipendente.print();
 
     }
 }

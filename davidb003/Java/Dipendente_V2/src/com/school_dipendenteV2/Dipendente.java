@@ -16,14 +16,14 @@ public class Dipendente {
     private String nome;
     private String cognome;
     private String reparto;
-    private String qualitifca;
+    private String qualifica;
     private float stipendio;
 
     public Dipendente(String nome, String cognome, String reparto, String qualifica, float stipendio) {
         this.nome = nome;
         this.cognome = cognome;
         this.reparto = reparto;
-        this.qualitifca = qualitifca;
+        this.qualifica = qualifica;
         this.stipendio = stipendio;
     }
 
@@ -51,12 +51,12 @@ public class Dipendente {
         this.reparto = reparto;
     }
 
-    public String getQualitifca() {
-        return qualitifca;
+    public String getQualifica() {
+        return qualifica;
     }
 
-    public void setQualitifca(String qualitifca) {
-        this.qualitifca = qualitifca;
+    public void setQualifica(String qualifica) {
+        this.qualifica = qualifica;
     }
 
     public float getStipendio() {
@@ -90,6 +90,6 @@ public class Dipendente {
     public void print() {
         System.out.println("\n\n-----------------------\n" +
                 "Nome: " + getNome() + "\nCognome: " + getCognome() + "\nReparto: " + getReparto() +
-                "\nQualifica: " + getQualitifca() + "\nStipendio: " + getStipendio());
+                "\nQualifica: " + getQualifica() + "\nStipendio: " + getStipendio());
     }
 }
