@@ -54,7 +54,6 @@ public class Bevanda {
     }
 
     public void stampa() {
-        System.out.println("\n---------------------\n");
         System.out.println("Nome: " + getNome() + "\nGradiazione: " + getGradazione() + "\nPrezzo: "
         + getPrezzo() + "\nTipo: Bevanda " + (isTipo() ? "Calda" : "Fredda"));
     }

@@ -1,10 +1,10 @@
 package com.school_bevanda;
 
-//TODO 1.aggiungi prezzo;
-//TODO 2.incremento prezzo;
-//TODO 3. stampa;
-//TODO 4. gradoalcolico;
-//TODO 5. fine
+//DONE 1.aggiungi prezzo;
+//DONE 2.incremento prezzo;
+//DONE 3. stampa;
+//DONE 4. gradoalcolico;
+//DONE 5. fine
 
 import java.util.Scanner;
 
@@ -19,16 +19,17 @@ public class Main {
         byte inputIncremento;
 
         while (execute) {
+            System.out.println("\n-------------------------------\n");
             System.out.println("Scegli una opzione");
-            System.out.println("1. Input dati\n2. Inserisci prezzo\n3.Incrementa prezzo del 10%" +
-                    "\n4. Determina grado alcolico\n5. Esci");
+            System.out.println("1. Input dati\n2. Inserisci prezzo\n3. Incrementa prezzo del 10%" +
+                    "\n4. Determina grado alcolico\n5. Stampa\n6. Esci");
             System.out.print("> ");
             select = scan.nextByte();
 
             switch (select) {
                 case 1:
                     System.out.println("\nNome Bevanda: ");
-                    Bevanda.setNome(scan.nextLine());
+                    Bevanda.setNome(scan.next());
                     System.out.println("\nGradazione: ");
                     Bevanda.setGradazione(scan.nextInt());
 
@@ -52,21 +53,20 @@ public class Main {
                 case 2:
                     System.out.println("\nInserisci Prezzo: ");
                     Bevanda.aggiungiPrezzo(scan.nextFloat());
-
                     break;
 
                 case 3:
                     Bevanda.modificaPrezzo();
                     System.out.println("Prezzo incrementato del 10%");
-
                     break;
 
                 case 4:
                     Bevanda.gradoAlcolico();
-
                     break;
-
                 case 5:
+                    Bevanda.stampa();
+                    break;
+                case 6:
                     execute = !execute;
                     break;
 
