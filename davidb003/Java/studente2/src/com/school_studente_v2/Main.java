@@ -1,5 +1,12 @@
 package com.school_studente_v2;
 
+// TODO realizzare un menu con le seguenti opzioni:
+// TODO 1..aggiungi voto;
+// TODO 2..modifica classe alunno;
+// TODO 3.. esito alunno;
+// TODO 4.. media degli alunni;
+// TODO 5.. fine
+
 import java.util.Scanner;
 
 public class Main {
@@ -39,5 +46,19 @@ public class Main {
 
         studente.stampa();
         studente.esito();
+
+        boolean execute = true;
+        byte select;
+        byte inputIncremento;
+
+        while (execute) {
+            System.out.println("\n-------------------------------\n");
+            System.out.println("Scegli una opzione");
+            System.out.println("");
+            System.out.print("> ");
+            select = scan.nextByte();
+
+            switch (select) {
+                case 1:
     }
 }
